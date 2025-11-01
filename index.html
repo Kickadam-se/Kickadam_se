@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kickadam.se</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      color: white;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: white;
+      color: #0072ff;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #0072ff;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <h1>Välkommen till Kickadam.se</h1>
+  <button id="installBtn">Installera</button>
+
+  <footer>© 2025 Kickadam.se</footer>
+
+  <script>
+    // Skriv in din länk här
+    const installLink = "https://din-länk-här.se"; // <-- byt ut denna
+
+    document.getElementById("installBtn").addEventListener("click", () => {
+      window.location.href = installLink;
+    });
+  </script>
+</body>
+</html>
